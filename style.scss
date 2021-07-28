@@ -1,0 +1,643 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+//colors
+$items:#E8DFCE;
+$bgColor:#B94700;
+$text:#1A1A1A;
+
+//fonts
+$Black:'Aktiv Black';
+$bold:'Aktiv Bold';
+$medium:'Aktiv Medium';
+
+//mixin
+@mixin  h1{background-color: $items;border-bottom-right-radius:100%;border-bottom-left-radius:100%;margin: 0px 25%;padding: 38px;font-family: $bold;
+  left: 28%;position: absolute;font-size: 1.2rem;color: $bgColor;}
+
+
+@mixin h2 {background-color: $bgColor;border-bottom-right-radius:100%;border-bottom-left-radius:100%;padding: 38px;
+    margin: 0 30%;position: absolute;left: -68px;color: $items;font-size: 1.2rem;font-family: $bold;}
+
+
+
+//banner.............................................................................
+.banner{background-color:$bgColor;position: relative;height: 100vh;padding-bottom: 40px;z-index: -1;
+  .inner{display: flex;align-items: center;justify-content: center;flex-direction: column;padding: 90px 0;
+      h1{font-size: 60px;display: flex;flex-direction: column;align-items: center;justify-content: center;margin-bottom: 10px;color:$items;font-family:$medium;
+        
+      }
+      .hero{width: 40%;}
+  }
+  span{top: 63%;position: absolute;left: 34%;white-space: pre-line;font-size: 2rem;color: #E8DFCE;font-family: "Aktiv Medium";line-height: 1.1;}
+.logo{width: 40%;margin-right: 40px;position: absolute;right: 0;top: 81%;}
+}
+//ABOUT.............................................................
+.about{background-color: $items;
+  h2{background-color: $bgColor;border-bottom-right-radius:100%;border-bottom-left-radius:100%;padding: 40px;
+    margin: 0 30%;position: absolute;left: -68px;color: $items;font-size: 1.2rem;font-family: $bold;}
+    .about-inner{padding-top: 30%;
+    .inner-text{padding: 2%;
+      h4{font-size: 2rem;text-align: center;padding-bottom:15px;font-family: $bold;}
+      p{font-size: 1.5rem;text-align: center;padding: 2%;font-family: $medium;}
+    }
+    .inner-img{padding: 40px 0; }
+    }
+    .logo{padding: 50px;}
+}
+
+
+//Our Value.................................................
+.values{background-color: $bgColor;text-align: center;
+  h1{@include h1}
+  .main-value{padding-top: 47%;
+  h3{font-size: 3rem;text-align: center;color: $items;padding: 30px;font-family: $bold;}
+  img{border-top-left-radius: 50%;border-top-right-radius: 50%;width: 60%;}
+  }
+  .value-text{padding-top: 30px;
+.value-inner{
+  h4{font-size: 3rem;padding: 15px;color: $items;font-family: $medium;}
+  p{font-size: 1.5rem;white-space: pre-line;color: $items;font-family: $medium;}
+  }
+  }
+.logo{padding: 50px;}
+}
+
+//mission................................................
+.mission{background-color: $items;
+  .mission-img{
+    h2{@include h2;left: -78px;}
+    img{border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;width: 40%;position: absolute;left:57%}
+  }
+.mission-text{padding-top: 50%;text-align: center;
+h3{font-size: 3rem;text-align: center;color: $text;padding: 30px;white-space: pre-line;font-family: $bold;line-height: 1.2;}
+p{font-size: 2rem;text-align: center;color: $text;padding:5%;font-family: $medium;line-height: 1.3;}
+}
+.logo{text-align: center;padding: 30px;}
+
+}
+
+ //tab.........................................................
+ .PORTFOLIO{background-color: $bgColor;
+  h1{@include h1}
+  h3{display:flex;justify-content:center;font-size: 3rem;padding-top: 45%;color: $items;font-family: $bold;}
+  h4{display:flex;justify-content:center;font-size: 1.5rem;font-family:$medium;padding:20px;color: $items;}
+  h2{display:flex;justify-content:center;font-size: 2rem;color: $items;font-family: $medium;padding-bottom: 10px;}
+  .Tabs{padding: 0 5%;
+      .tabs-inner{position: relative;overflow: hidden;width: 35%;padding: 5%;display: flex;margin-bottom: 3rem;display: none;
+          .tab-scroll{margin: 20px;width: 2px;height: 80%;top:0;right: 0;background:black;position: absolute;
+      .scrollbar{width: 4px;height: 20%;background-color:$bgColor;position: absolute;transform: translateX(-1);transition: 700ms;top:5%;}
+          }
+          .side-tabs{width: 100%;
+          label{padding: 20px;display: block;margin: 5px 0 5px 15px;color: #6d7278;font-size: 1.5rem;transition: 700ms;
+              .icon{margin-right: 10px;width: 20px;}
+              .icon-2{margin-left: 10px;width: 10px;}
+          }
+          .active{color:$bgColor;font-weight: bold; }
+          }
+      }
+      
+      .tabs-infor{overflow: hidden;background-color:transparent;color: white;padding: 5%;border-radius: 5px;position: relative;height: calcu(100%-60%);padding:0 5%;
+      .list{position: absolute;top: -200%;opacity: 0;margin-top: 5px;transform: scale(0.1);transition: opacity 500ms ease-in-out 0ms;}
+      .active{top:0;opacity: 1;transform: scale(1);margin-top: 0;height: auto;position: relative;
+          p{font-size: 1.8rem;line-height: 1.3;color: $items;font-family: $medium;}
+          img{width: 80%;margin: 20px;}
+          
+      }
+      }
+      
+      }
+      .logo{padding: 30px;}
+}
+
+
+//contact.............................
+.contact{background-color: $items;
+  .contact-inner{
+    .contact-top{
+      h1{@include h2}
+      img{border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;width: 40%;position: absolute;left:57%}
+    }
+    .contact-bottom{display:flex;justify-content:space-between;padding:30% 5%;
+      .contact-img{  display: flex; flex-direction: row-reverse;width:45%;height:130px;position: relative;
+        img{border-top-left-radius: 50%;border-top-right-radius: 50%;width: 100%;position: absolute;
+          top: 80%;}
+    }
+      .logo{padding-top: 61%;width: 45%;}
+    }
+   }
+  .contact-text{padding:40px;text-align: center;
+    h3{font-size: 3rem;text-align: center;color: $text;padding: 30px;font-family: $medium;}
+    p{font-size: 2rem;text-align: center;color: $text;padding:5%;font-family: $medium;line-height: 1.3;}
+    button{background-color: $bgColor;padding:20px;border:none;
+      a{font-size: 2rem;color:$items;font-family: $medium;}
+    }
+  }
+}
+
+// // footer......................
+footer{background-color:$bgColor ;text-align: center;padding: 5%; }
+
+
+//MEDIA QUERIES.....................................................................................................................
+
+@media (min-width: 568px) { 
+  //banner.............................................................................
+  .banner{height: 120vh;
+		.inner{display: flex;align-items: center;justify-content: center;flex-direction: row;padding: 100px 0;
+			h1{font-size: 60px;display: flex;flex-direction: column;align-items: center;justify-content: center;margin-bottom: 10px;
+				span{margin-top: 0px;white-space: pre-line;margin-left: 40px;}
+			}
+			.hero{width: 40%;position: relative;margin:0 -50px;z-index: 5;left: -2%;}
+		}
+		.logo{position: absolute;width: 20%;bottom: 5%;}
+	}
+//ABOUT.............................................................
+.about{background-color: $items;
+  h2{background-color: $bgColor;border-bottom-right-radius:100%;border-bottom-left-radius:100%;padding: 26px;
+    margin: 0 30%;position: absolute;left: -68px;color: $items;font-size: 1.2rem;font-family: $bold;}
+    .about-inner{padding-top: 20%;
+    .inner-text{padding: 5%;
+      h4{font-size: 2rem;text-align: center;padding-bottom:15px;font-family: $bold;line-height: 1.2;}
+      p{font-size: 1.5rem;text-align: center;padding: 2%;font-family: $medium;line-height: 1.2;}
+    }
+    .inner-img{padding: 40px 0; }
+    }
+    .logo{padding: 50px;}
+}
+
+//values
+.values {
+  .main-value {
+    padding-top: 30%;
+  }
+}
+
+//portifolio
+.PORTFOLIO {
+  h3 { padding-top: 33%;}
+}
+
+//contact
+.contact {
+  .contact-inner{
+    .contact-bottom {display: none;}
+  } 
+  .contact-text{
+    padding-top: 44%;
+
+  }
+}
+
+}
+
+
+@media (min-width: 768px) { 
+  //banner.............................................................................
+	.banner{height:55vh;
+		.inner{
+			h1{font-size: 80px;padding-top: 30px;
+				span{font-size: 22px;}
+			}
+     
+			.hero{margin:25px -70px;}
+		}
+    span{left: 64%;}
+		.logo{width: 30%;}
+	}
+
+//ABOUT.............................................................
+.about{background-color: $items;
+  h2{background-color: $bgColor;border-bottom-right-radius:100%;border-bottom-left-radius:100%;padding: 40px;
+    margin: 0 30%;position: absolute;left: -68px;color: $items;font-size: 1.2rem;font-family: $bold;}
+    .about-inner{padding-top: 30%;
+    .inner-text{padding: 2%;
+      h4{font-size: 2.5rem;text-align: center;padding-bottom:15px;font-family: $bold;}
+      p{font-size: 2rem;text-align: center;padding: 2%;font-family: $medium;}
+    }
+    .inner-img{padding: 40px 0;
+    img{width: 100%;}
+    }
+    }
+    .logo{padding: 50px;}
+}
+
+}
+
+
+
+
+@media (min-width: 992px) { 
+
+  //banner.................................................
+	.banner{
+		.inner{
+			h1{font-size: 100px;
+			}
+			.hero{margin: 25px -90px;}
+		}
+		.logo{width: 30%;position: absolute;right: 5%;}
+	}
+
+//ABOUT.............................................................
+.about{background-color: $items;
+  h2{background-color: $bgColor;border-bottom-right-radius:100%;border-bottom-left-radius:100%;padding: 40px;
+    margin: 0 14%;position: absolute;left: -68px;color: $items;font-size: 1.2rem;font-family: $bold;}
+    .about-inner{padding-top: 20%;display: flex;
+    .inner-text{padding: 6%;
+      h4{font-size: 2rem;text-align: left;padding-bottom:15px;font-family: $bold;padding-left: 20%;}
+      p{font-size: 1.5rem;text-align: left;padding-left: 20%;font-family: $medium;}
+    }
+    .inner-img{padding: 40px 0; }
+    }
+    .logo{padding: 50px;}
+}
+
+//values...........................................................................
+.values{background-color: $bgColor;text-align: center;display: flex;
+  h1{@include h1;margin: 0 50%;}
+  
+  .main-value{padding-top: 22%;
+  h3{font-size: 3rem;color: $items;font-family: $bold;white-space: pre-line;text-align: left;
+    padding-left: 160px;}
+  img{border-top-left-radius: 50%;border-top-right-radius: 50%;width: 60%;}
+  }
+  .value-text{padding-top: 170px ;padding-right: 2%;
+.value-inner{
+  h4{font-size: 3rem;padding: 15px;color: $items;font-family: $medium;}
+  p{font-size: 2rem;white-space: pre-line;color: $items;font-family: $medium;}
+  }
+  }
+.logo{padding: 50px;position: absolute;right: 3%;bottom: -85%;}
+}
+
+
+//mission................................................
+.mission{background-color: $items;
+  .mission-img{
+    h2{@include h2;left: -78px;margin: 0 11%;}
+    img{border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;width: 40%;position: absolute;left:25%}
+  }
+.mission-text{padding-top: 50%;text-align: center;padding-right: 7%;
+h3{font-size: 3rem;text-align:right;color: $text;padding: 30px 0;white-space: pre-line;font-family: $bold;line-height: 1.2;}
+p{font-size: 2rem;text-align: right;color: $text;padding:5% 0;font-family: $medium;line-height: 1.3;white-space: pre-line;}
+}
+.logo{text-align: center;padding: 30px;display: flex;}
+
+}
+
+
+//contact.............................
+.contact{background-color: $items;display: flex;
+  .contact-inner{width:60%;
+    .contact-top{padding-bottom: 58%;
+      h1{@include h2;margin:0 10%;}
+      img{border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;width: 40%;position: absolute;left:25%}
+    }
+    .contact-bottom{display:flex;justify-content:space-between;padding: 0;
+      .contact-img{  display: flex; flex-direction: row-reverse;width: 50%;height: 117px;position: relative;
+        img{border-top-left-radius: 50%;border-top-right-radius: 50%;width: 100%;position: absolute;
+          top: 95%;left: -11%;}
+    }
+      .logo{padding-top: 61%;width: 45%;width: 170px;padding-left: 30px;}
+    }
+   }
+  .contact-text{padding-top: 294px;text-align: center; width: 44%;
+    h3{font-size: 3rem;text-align: center;color: $text;padding: 30px;font-family: $medium;}
+    p{font-size: 2rem;text-align: center;color: $text;padding:5%;font-family: $medium;line-height: 1.3;}
+    button{background-color: $bgColor;padding:20px;border:none;
+      a{font-size: 2rem;color:$items;font-family: $medium;}
+    }
+  }
+}
+
+
+ //tab.........................................................
+ .PORTFOLIO{background-color: $bgColor;
+  h1{@include h1; margin:0 49%;}
+  h3{display:flex;justify-content:center;font-size: 3rem;padding-top: 20%;color: $items;font-family: $bold;}
+  h4{display:flex;justify-content:center;font-size: 1.5rem;font-family:$medium;padding:0;color: $items;flex-flow: column-reverse;}
+  h2{display:flex;justify-content:center;font-size: 2rem;color: $items;font-family: $medium;padding: 10px 0;flex-flow: column-reverse;}
+  .Tabs{padding: 0 5%;display:flex;
+      .tabs-inner{position: relative;overflow: hidden;width: 35%;padding: 5%;display: flex;margin-bottom: 3rem;display:block;
+          .tab-scroll{margin: 20px;width: 2px;height: 80%;top:0;right: 0;background:$bgColor;position: absolute;
+      .scrollbar{width: 4px;height: 20%;background-color:$bgColor;position: absolute;transform: translateX(-1);transition: 700ms;top:5%;}
+          }
+          .side-tabs{width: 100%;
+          label{padding: 20px;display: block;margin: 5px 0 5px 15px;color: #6d7278;font-size: 1.5rem;transition: 700ms;
+              .icon{margin-right: 10px;width: 20px;}
+              .icon-2{margin-left: 10px;width: 10px;}
+          }
+          .active{color:$bgColor;font-weight: bold; }
+          }
+      }
+      
+      .tabs-infor{overflow: hidden;background-color:transparent;color: white;border-radius: 5px;position: relative;height: calcu(100%-60%);padding:0 5%;display: flex;
+        width: 70%;
+      .list{position: absolute;top: -200%;opacity: 0;margin-top: 5px;transform: scale(0.1);transition: opacity 500ms ease-in-out 0ms;display:flex;}
+      .active{top:0;opacity: 1;transform: scale(1);margin-top: 0;height: auto;position: relative;width: 91%;height: 24vh;padding-top: 83px;
+          p{font-size: 1.8rem;line-height: 1.3;color: $items;font-family: $medium;width: 100%;padding-top: 20px;}
+          img{width: 40%;margin: 20px;}
+    }
+      }
+     
+      }
+      .logo{padding: 30px;}
+    
+}
+
+}
+
+
+
+@media (min-width: 1200px) { 
+
+  //banner.............................................
+	.banner{height: 100vh;
+		.inner{
+			h1{font-size: 120px;line-height: 1.5;}
+			.hero{margin: 25px -90px;width: 30%;}
+		}
+  
+		.logo{width: 20%;}
+	}
+
+//about.............................................................
+.about{background-color: $items;
+  h2{background-color: $bgColor;border-bottom-right-radius:100%;border-bottom-left-radius:100%;padding: 40px;
+    margin: 0 14%;position: absolute;left: -68px;color: $items;font-size: 1.2rem;font-family: $bold;}
+    .about-inner{padding-top: 10%;display: flex;
+    .inner-text{padding: 105px 6%;width: 60%;
+      h4{font-size: 2rem;text-align: left;padding-bottom:48px;font-family: $bold;padding-left: 20%;white-space: pre-line;}
+      p{font-size: 1.5rem;text-align: left;padding-left: 20%;font-family: $medium;white-space: pre-line;line-height: 1.3;}
+    }
+    .inner-img{padding: 40px 0; width:40%;}
+    }
+    .logo{padding: 50px;}
+}
+
+//values...........................................................................
+.values{background-color: $bgColor;text-align: center;display: flex;
+  h1{@include h1;margin: 0 50%;}
+  
+  .main-value{padding-top: 22%;margin-left: 132px;
+    h3{font-size: 4rem;color: $items;font-family: $bold;white-space: pre-line;text-align: left;
+      padding-left: 160px;margin-bottom: 30px;}
+  img{border-top-left-radius: 50%;border-top-right-radius: 50%;width: 60%;}
+  }
+  .value-text{padding-top: 177px;padding-right: 2%;
+.value-inner{margin-bottom: 10px;
+  h4{font-size: 3rem;padding: 20px;color: $items;font-family: $medium;}
+  p{font-size: 2rem;white-space: pre-line;color: $items;font-family: $medium;}
+  }
+  }
+  .logo{padding: 36px;position: absolute;right: -2%;
+    bottom: -217%;}
+}
+
+//mission................................................
+.mission{background-color: $items;
+  .mission-img{
+    h2{@include h2;left: -78px;margin: 0 11%;}
+    img{border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;width: 32%;position: absolute;left:21%}
+  }
+.mission-text{padding-top: 33%;text-align: center;padding-right: 7%;
+h3{font-size: 5rem;text-align:right;color: $text;padding: 30px 0;white-space: pre-line;font-family: $bold;line-height: 1.2;}
+p{font-size: 2rem;text-align: right;color: $text;padding:5% 0;font-family: $medium;line-height: 1.3;white-space: pre-line;}
+}
+.logo{text-align: center;padding: 30px;display: flex;}
+
+}
+
+//tab.........................................................
+.PORTFOLIO{background-color: $bgColor;
+  h1{@include h1; margin:0 49%;}
+  h3{display:flex;font-size: 5rem;padding-top: 20%;color: $items;font-family: $medium;flex-direction: column-reverse;
+    padding-left: 12%;}
+  h4{display:flex;justify-content:center;font-size: 1.5rem;font-family:$medium;padding:0;color: $items;flex-flow: column-reverse;}
+  h2{display:flex;justify-content:center;font-size: 2.5rem;color: #B7B09C;font-family: $medium;padding: 10px 0;flex-flow: column-reverse;}
+  .Tabs{padding: 0 5%;display:flex;
+      .tabs-inner{position: relative;overflow: hidden;width: 35%;padding: 5%;display: flex;margin-bottom: 3rem;display:block;
+          .tab-scroll{margin: 20px;width: 2px;height: 80%;top:0;right: 0;background:$bgColor;position: absolute;
+      .scrollbar{width: 4px;height: 20%;background-color:$bgColor;position: absolute;transform: translateX(-1);transition: 700ms;top:5%;}
+          }
+          .side-tabs{width: 100%;
+          label{padding: 20px;display: block;margin: 5px 0 5px 15px;color: #6d7278;font-size: 1.5rem;transition: 700ms;}
+          .active{color:$items;font-weight: bold;
+            h2{color: $items;}
+          }
+          }
+      }
+      
+      .tabs-infor{overflow: hidden;background-color:transparent;color: white;border-radius: 5px;position: relative;height: calcu(100%-60%);padding:0 5%;display: flex;
+        width: 70%;
+      .list{position: absolute;top: -200%;opacity: 0;margin-top: 5px;transform: scale(0.1);transition: opacity 500ms ease-in-out 0ms;display:flex;}
+      .active{top:0;opacity: 1;transform: scale(1);margin-top: 0;height: auto;position: relative;width: 91%;height: 48vh;padding-top: 123px;
+          p{font-size: 1.8rem;line-height: 1.3;color: $items;font-family: $medium;width: 100%;padding-top: 20px;}
+          h2{color: $items;}
+          img{width: 40%;margin: 20px;}
+    }
+      }
+     
+      }
+      .logo{padding: 30px;}
+    
+}
+
+
+//contact.............................
+.contact{background-color: $items;display: flex;
+  .contact-inner{width:60%;
+    .contact-top{padding-bottom: 58%;
+      h1{@include h2;margin:0 10%;}
+      img{border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;width: 32%;position: absolute;left:25%}
+    }
+    .contact-bottom{display:flex;justify-content:space-between;padding: 0;
+      .contact-img{  display: flex; flex-direction: row-reverse;width: 52%;height: 117px;position: relative;
+        img{border-top-left-radius: 50%;border-top-right-radius: 50%;width: 100%;position: absolute;
+          top: 95%;left: -11%;}
+    }
+      .logo{padding-top: 61%;width: 45%;width: 170px;padding-left: 30px;}
+    }
+   }
+  .contact-text{padding-top: 294px;text-align:right; width: 44%;
+    h3{font-size: 4.5rem;text-align:right;color: $text;padding: 30px;font-family: $medium;}
+    p{font-size: 2rem;text-align: right;color: $text;padding: 0 5%;font-family: $medium;line-height: 1.3;white-space: pre-line;}
+    button{background-color: $bgColor;padding:20px;border:none;margin: 30px 30px;
+      a{font-size: 2rem;color:$items;font-family: $medium;}
+    }
+  }
+}
+}
+
+@media (min-width: 1400px) {
+  .banner{
+		.inner{
+			.hero{width: 35%;margin: 25px -88px;}
+		}
+    span{top:65%}
+		.logo{width: 15%;}
+	}
+//about.............................................................
+.about{background-color: $items;
+  h2{background-color: $bgColor;border-bottom-right-radius:100%;border-bottom-left-radius:100%;padding: 40px;
+    margin: 0 14%;position: absolute;left: -68px;color: $items;font-size: 1.2rem;font-family: $bold;}
+    .about-inner{padding-top: 10%;display: flex;
+    .inner-text{padding: 105px 6%;width: 60%;
+      h4{font-size: 2rem;text-align: left;padding-bottom:48px;font-family: $bold;padding-left: 20%;white-space: pre-line;}
+      p{font-size: 1.5rem;text-align: left;padding-left: 20%;font-family: $medium;white-space: pre-line;line-height: 1.3;}
+    }
+    .inner-img{padding: 40px 0; width:40%;}
+    }
+    .logo{padding: 50px;}
+}
+
+//values...........................................................................
+.values{background-color: $bgColor;text-align: center;display: flex;
+  h1{@include h1;margin: 0 50%;}
+  
+  .main-value{padding-top: 22%;margin-left: 168px;
+  h3{font-size: 3rem;text-align: center;color: $items;padding: 30px;font-family: $bold;white-space: pre-line;margin-bottom: 30px;}
+  img{border-top-left-radius: 50%;border-top-right-radius: 50%;width: 60%;}
+  }
+  .value-text{padding-top: 177px;padding-right: 2%;
+.value-inner{
+  h4{font-size: 3rem;padding: 15px;color: $items;font-family: $medium;}
+  p{font-size: 2rem;white-space: pre-line;color: $items;font-family: $medium;}
+  }
+  }
+.logo{padding: 36px;position: absolute;right: -2%;
+  bottom: -217%;}
+}
+
+//mission................................................
+.mission{background-color: $items;
+  .mission-img{
+    h2{@include h2;left: -78px;margin: 0 11%;}
+    img{border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;width: 28%;position: absolute;left:21%}
+  }
+.mission-text{padding-top: 33%;text-align: center;padding-right: 7%;
+h3{font-size: 5rem;text-align:right;color: $text;padding: 30px 0;white-space: pre-line;font-family: $bold;line-height: 1.2;}
+p{font-size: 2rem;text-align: right;color: $text;padding:5% 0;font-family: $medium;line-height: 1.3;white-space: pre-line;}
+}
+.logo{text-align: center;padding: 30px;display: flex;}
+
+}
+
+//tab.........................................................
+.PORTFOLIO{background-color: $bgColor;
+  h1{@include h1; margin:0 49%;}
+  h3{display:flex;font-size: 5rem;padding-top: 20%;color: $items;font-family: $medium;flex-direction: column-reverse;
+    padding-left: 12%;}
+  h4{display:flex;justify-content:center;font-size: 1.5rem;font-family:$medium;padding:0;color: $items;flex-flow: column-reverse;}
+  h2{display:flex;justify-content:center;font-size: 2.5rem;color: #B7B09C;font-family: $medium;padding: 10px 0;flex-flow: column-reverse;}
+  .Tabs{padding: 0 5%;display:flex;
+      .tabs-inner{position: relative;overflow: hidden;width: 35%;padding: 5%;display: flex;margin-bottom: 3rem;display:block;
+          .tab-scroll{margin: 20px;width: 2px;height: 80%;top:0;right: 0;background:$bgColor;position: absolute;
+      .scrollbar{width: 4px;height: 20%;background-color:$bgColor;position: absolute;transform: translateX(-1);transition: 700ms;top:5%;}
+          }
+          .side-tabs{width: 100%;
+          label{padding: 20px;display: block;margin: 5px 0 5px 15px;color: #6d7278;font-size: 1.5rem;transition: 700ms;
+              .icon{margin-right: 10px;width: 20px;}
+              .icon-2{margin-left: 10px;width: 10px;}
+          }
+          .active{color:$bgColor;font-weight: bold; }
+          }
+      }
+      
+      .tabs-infor{overflow: hidden;background-color:transparent;color: white;border-radius: 5px;position: relative;height: calcu(100%-60%);padding:0 5%;display: flex;
+        width: 70%;
+      .list{position: absolute;top: -200%;opacity: 0;margin-top: 5px;transform: scale(0.1);transition: opacity 500ms ease-in-out 0ms;display:flex;}
+      .active{top:0;opacity: 1;transform: scale(1);margin-top: 0;height: auto;position: relative;width: 91%;height: 48vh;padding-top: 83px;
+          p{font-size: 1.8rem;line-height: 1.3;color: $items;font-family: $medium;width: 100%;padding-top: 20px;}
+          img{width: 40%;margin: 20px;}
+    }
+      }
+     
+      }
+      .logo{padding: 30px;}
+    
+}
+
+
+//contact.............................
+.contact{background-color: $items;display: flex;
+  .contact-inner{width:60%;
+    .contact-top{padding-bottom: 58%;
+      h1{@include h2;margin:0 10%;}
+      img{border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;width: 32%;position: absolute;left:25%}
+    }
+    .contact-bottom{display:flex;justify-content:space-between;padding: 0;
+      .contact-img{  display: flex; flex-direction: row-reverse;width: 52%;height: 117px;position: relative;
+        img{border-top-left-radius: 50%;border-top-right-radius: 50%;width: 100%;position: absolute;
+          top: 100%;left: -11%;}
+    }
+      .logo{padding-top: 61%;width: 45%;width: 170px;padding-left: 30px;}
+    }
+   }
+  .contact-text{padding-top: 294px;text-align:right; width: 44%;
+    h3{font-size: 4.5rem;text-align:right;color: $text;padding: 30px;font-family: $medium;}
+    p{font-size: 2rem;text-align: right;color: $text;padding: 0 5%;font-family: $medium;line-height: 1.3;white-space: pre-line;}
+    button{background-color: $bgColor;padding:20px;border:none;margin: 30px 30px;
+      a{font-size: 2rem;color:$items;font-family: $medium;}
+    }
+  }
+}
+ }
+
+

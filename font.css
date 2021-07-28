@@ -1,0 +1,19 @@
+@font-face{
+    font-family:'Aktiv Bold';
+    font-style: normal;
+    font-weight: 100;
+    src:url(ARTIV/Bold.ttf)
+}
+@font-face{
+    font-family:'Aktiv Black';
+    font-style: normal;
+    font-weight: 100;
+    src:url(ARTIV/Black.ttf)
+}
+
+@font-face{
+    font-family:'Aktiv Medium';
+    font-style: normal;
+    font-weight: 100;
+    src:url(ARTIV/Medium.ttf)
+}

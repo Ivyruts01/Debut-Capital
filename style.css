@@ -1,0 +1,1821 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.banner {
+  background-color: #B94700;
+  position: relative;
+  height: 100vh;
+  padding-bottom: 40px;
+  z-index: -1;
+}
+.banner .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 90px 0;
+}
+.banner .inner h1 {
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #E8DFCE;
+  font-family: "Aktiv Medium";
+}
+.banner .inner .hero {
+  width: 40%;
+}
+.banner span {
+  top: 63%;
+  position: absolute;
+  left: 34%;
+  white-space: pre-line;
+  font-size: 2rem;
+  color: #E8DFCE;
+  font-family: "Aktiv Medium";
+  line-height: 1.1;
+}
+.banner .logo {
+  width: 40%;
+  margin-right: 40px;
+  position: absolute;
+  right: 0;
+  top: 81%;
+}
+
+.about {
+  background-color: #E8DFCE;
+}
+.about h2 {
+  background-color: #B94700;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  padding: 40px;
+  margin: 0 30%;
+  position: absolute;
+  left: -68px;
+  color: #E8DFCE;
+  font-size: 1.2rem;
+  font-family: "Aktiv Bold";
+}
+.about .about-inner {
+  padding-top: 30%;
+}
+.about .about-inner .inner-text {
+  padding: 2%;
+}
+.about .about-inner .inner-text h4 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: "Aktiv Bold";
+}
+.about .about-inner .inner-text p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2%;
+  font-family: "Aktiv Medium";
+}
+.about .about-inner .inner-img {
+  padding: 40px 0;
+}
+.about .logo {
+  padding: 50px;
+}
+
+.values {
+  background-color: #B94700;
+  text-align: center;
+}
+.values h1 {
+  background-color: #E8DFCE;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  margin: 0px 25%;
+  padding: 38px;
+  font-family: "Aktiv Bold";
+  left: 28%;
+  position: absolute;
+  font-size: 1.2rem;
+  color: #B94700;
+}
+.values .main-value {
+  padding-top: 47%;
+}
+.values .main-value h3 {
+  font-size: 3rem;
+  text-align: center;
+  color: #E8DFCE;
+  padding: 30px;
+  font-family: "Aktiv Bold";
+}
+.values .main-value img {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 60%;
+}
+.values .value-text {
+  padding-top: 30px;
+}
+.values .value-text .value-inner h4 {
+  font-size: 3rem;
+  padding: 15px;
+  color: #E8DFCE;
+  font-family: "Aktiv Medium";
+}
+.values .value-text .value-inner p {
+  font-size: 1.5rem;
+  white-space: pre-line;
+  color: #E8DFCE;
+  font-family: "Aktiv Medium";
+}
+.values .logo {
+  padding: 50px;
+}
+
+.mission {
+  background-color: #E8DFCE;
+}
+.mission .mission-img h2 {
+  background-color: #B94700;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  padding: 38px;
+  margin: 0 30%;
+  position: absolute;
+  left: -68px;
+  color: #E8DFCE;
+  font-size: 1.2rem;
+  font-family: "Aktiv Bold";
+  left: -78px;
+}
+.mission .mission-img img {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 40%;
+  position: absolute;
+  left: 57%;
+}
+.mission .mission-text {
+  padding-top: 50%;
+  text-align: center;
+}
+.mission .mission-text h3 {
+  font-size: 3rem;
+  text-align: center;
+  color: #1A1A1A;
+  padding: 30px;
+  white-space: pre-line;
+  font-family: "Aktiv Bold";
+  line-height: 1.2;
+}
+.mission .mission-text p {
+  font-size: 2rem;
+  text-align: center;
+  color: #1A1A1A;
+  padding: 5%;
+  font-family: "Aktiv Medium";
+  line-height: 1.3;
+}
+.mission .logo {
+  text-align: center;
+  padding: 30px;
+}
+
+.PORTFOLIO {
+  background-color: #B94700;
+}
+.PORTFOLIO h1 {
+  background-color: #E8DFCE;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  margin: 0px 25%;
+  padding: 38px;
+  font-family: "Aktiv Bold";
+  left: 28%;
+  position: absolute;
+  font-size: 1.2rem;
+  color: #B94700;
+}
+.PORTFOLIO h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 45%;
+  color: #E8DFCE;
+  font-family: "Aktiv Bold";
+}
+.PORTFOLIO h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: "Aktiv Medium";
+  padding: 20px;
+  color: #E8DFCE;
+}
+.PORTFOLIO h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: #E8DFCE;
+  font-family: "Aktiv Medium";
+  padding-bottom: 10px;
+}
+.PORTFOLIO .Tabs {
+  padding: 0 5%;
+}
+.PORTFOLIO .Tabs .tabs-inner {
+  position: relative;
+  overflow: hidden;
+  width: 35%;
+  padding: 5%;
+  display: flex;
+  margin-bottom: 3rem;
+  display: none;
+}
+.PORTFOLIO .Tabs .tabs-inner .tab-scroll {
+  margin: 20px;
+  width: 2px;
+  height: 80%;
+  top: 0;
+  right: 0;
+  background: black;
+  position: absolute;
+}
+.PORTFOLIO .Tabs .tabs-inner .tab-scroll .scrollbar {
+  width: 4px;
+  height: 20%;
+  background-color: #B94700;
+  position: absolute;
+  transform: translateX(-1);
+  transition: 700ms;
+  top: 5%;
+}
+.PORTFOLIO .Tabs .tabs-inner .side-tabs {
+  width: 100%;
+}
+.PORTFOLIO .Tabs .tabs-inner .side-tabs label {
+  padding: 20px;
+  display: block;
+  margin: 5px 0 5px 15px;
+  color: #6d7278;
+  font-size: 1.5rem;
+  transition: 700ms;
+}
+.PORTFOLIO .Tabs .tabs-inner .side-tabs label .icon {
+  margin-right: 10px;
+  width: 20px;
+}
+.PORTFOLIO .Tabs .tabs-inner .side-tabs label .icon-2 {
+  margin-left: 10px;
+  width: 10px;
+}
+.PORTFOLIO .Tabs .tabs-inner .side-tabs .active {
+  color: #B94700;
+  font-weight: bold;
+}
+.PORTFOLIO .Tabs .tabs-infor {
+  overflow: hidden;
+  background-color: transparent;
+  color: white;
+  padding: 5%;
+  border-radius: 5px;
+  position: relative;
+  height: calcu(40%);
+  padding: 0 5%;
+}
+.PORTFOLIO .Tabs .tabs-infor .list {
+  position: absolute;
+  top: -200%;
+  opacity: 0;
+  margin-top: 5px;
+  transform: scale(0.1);
+  transition: opacity 500ms ease-in-out 0ms;
+}
+.PORTFOLIO .Tabs .tabs-infor .active {
+  top: 0;
+  opacity: 1;
+  transform: scale(1);
+  margin-top: 0;
+  height: auto;
+  position: relative;
+}
+.PORTFOLIO .Tabs .tabs-infor .active p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  color: #E8DFCE;
+  font-family: "Aktiv Medium";
+}
+.PORTFOLIO .Tabs .tabs-infor .active img {
+  width: 80%;
+  margin: 20px;
+}
+.PORTFOLIO .logo {
+  padding: 30px;
+}
+
+.contact {
+  background-color: #E8DFCE;
+}
+.contact .contact-inner .contact-top h1 {
+  background-color: #B94700;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  padding: 38px;
+  margin: 0 30%;
+  position: absolute;
+  left: -68px;
+  color: #E8DFCE;
+  font-size: 1.2rem;
+  font-family: "Aktiv Bold";
+}
+.contact .contact-inner .contact-top img {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 40%;
+  position: absolute;
+  left: 57%;
+}
+.contact .contact-inner .contact-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 30% 5%;
+}
+.contact .contact-inner .contact-bottom .contact-img {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 45%;
+  height: 130px;
+  position: relative;
+}
+.contact .contact-inner .contact-bottom .contact-img img {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+}
+.contact .contact-inner .contact-bottom .logo {
+  padding-top: 61%;
+  width: 45%;
+}
+.contact .contact-text {
+  padding: 40px;
+  text-align: center;
+}
+.contact .contact-text h3 {
+  font-size: 3rem;
+  text-align: center;
+  color: #1A1A1A;
+  padding: 30px;
+  font-family: "Aktiv Medium";
+}
+.contact .contact-text p {
+  font-size: 2rem;
+  text-align: center;
+  color: #1A1A1A;
+  padding: 5%;
+  font-family: "Aktiv Medium";
+  line-height: 1.3;
+}
+.contact .contact-text button {
+  background-color: #B94700;
+  padding: 20px;
+  border: none;
+}
+.contact .contact-text button a {
+  font-size: 2rem;
+  color: #E8DFCE;
+  font-family: "Aktiv Medium";
+}
+
+footer {
+  background-color: #B94700;
+  text-align: center;
+  padding: 5%;
+}
+
+@media (min-width: 568px) {
+  .banner {
+    height: 120vh;
+  }
+  .banner .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 100px 0;
+  }
+  .banner .inner h1 {
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .banner .inner h1 span {
+    margin-top: 0px;
+    white-space: pre-line;
+    margin-left: 40px;
+  }
+  .banner .inner .hero {
+    width: 40%;
+    position: relative;
+    margin: 0 -50px;
+    z-index: 5;
+    left: -2%;
+  }
+  .banner .logo {
+    position: absolute;
+    width: 20%;
+    bottom: 5%;
+  }
+
+  .about {
+    background-color: #E8DFCE;
+  }
+  .about h2 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 26px;
+    margin: 0 30%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+  }
+  .about .about-inner {
+    padding-top: 20%;
+  }
+  .about .about-inner .inner-text {
+    padding: 5%;
+  }
+  .about .about-inner .inner-text h4 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: "Aktiv Bold";
+    line-height: 1.2;
+  }
+  .about .about-inner .inner-text p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2%;
+    font-family: "Aktiv Medium";
+    line-height: 1.2;
+  }
+  .about .about-inner .inner-img {
+    padding: 40px 0;
+  }
+  .about .logo {
+    padding: 50px;
+  }
+
+  .values .main-value {
+    padding-top: 30%;
+  }
+
+  .PORTFOLIO h3 {
+    padding-top: 33%;
+  }
+
+  .contact .contact-inner .contact-bottom {
+    display: none;
+  }
+  .contact .contact-text {
+    padding-top: 44%;
+  }
+}
+@media (min-width: 768px) {
+  .banner {
+    height: 55vh;
+  }
+  .banner .inner h1 {
+    font-size: 80px;
+    padding-top: 30px;
+  }
+  .banner .inner h1 span {
+    font-size: 22px;
+  }
+  .banner .inner .hero {
+    margin: 25px -70px;
+  }
+  .banner span {
+    left: 64%;
+  }
+  .banner .logo {
+    width: 30%;
+  }
+
+  .about {
+    background-color: #E8DFCE;
+  }
+  .about h2 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 40px;
+    margin: 0 30%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+  }
+  .about .about-inner {
+    padding-top: 30%;
+  }
+  .about .about-inner .inner-text {
+    padding: 2%;
+  }
+  .about .about-inner .inner-text h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: "Aktiv Bold";
+  }
+  .about .about-inner .inner-text p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2%;
+    font-family: "Aktiv Medium";
+  }
+  .about .about-inner .inner-img {
+    padding: 40px 0;
+  }
+  .about .about-inner .inner-img img {
+    width: 100%;
+  }
+  .about .logo {
+    padding: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .banner .inner h1 {
+    font-size: 100px;
+  }
+  .banner .inner .hero {
+    margin: 25px -90px;
+  }
+  .banner .logo {
+    width: 30%;
+    position: absolute;
+    right: 5%;
+  }
+
+  .about {
+    background-color: #E8DFCE;
+  }
+  .about h2 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 40px;
+    margin: 0 14%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+  }
+  .about .about-inner {
+    padding-top: 20%;
+    display: flex;
+  }
+  .about .about-inner .inner-text {
+    padding: 6%;
+  }
+  .about .about-inner .inner-text h4 {
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 15px;
+    font-family: "Aktiv Bold";
+    padding-left: 20%;
+  }
+  .about .about-inner .inner-text p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 20%;
+    font-family: "Aktiv Medium";
+  }
+  .about .about-inner .inner-img {
+    padding: 40px 0;
+  }
+  .about .logo {
+    padding: 50px;
+  }
+
+  .values {
+    background-color: #B94700;
+    text-align: center;
+    display: flex;
+  }
+  .values h1 {
+    background-color: #E8DFCE;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin: 0px 25%;
+    padding: 38px;
+    font-family: "Aktiv Bold";
+    left: 28%;
+    position: absolute;
+    font-size: 1.2rem;
+    color: #B94700;
+    margin: 0 50%;
+  }
+  .values .main-value {
+    padding-top: 22%;
+  }
+  .values .main-value h3 {
+    font-size: 3rem;
+    color: #E8DFCE;
+    font-family: "Aktiv Bold";
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 160px;
+  }
+  .values .main-value img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 60%;
+  }
+  .values .value-text {
+    padding-top: 170px;
+    padding-right: 2%;
+  }
+  .values .value-text .value-inner h4 {
+    font-size: 3rem;
+    padding: 15px;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+  .values .value-text .value-inner p {
+    font-size: 2rem;
+    white-space: pre-line;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+  .values .logo {
+    padding: 50px;
+    position: absolute;
+    right: 3%;
+    bottom: -85%;
+  }
+
+  .mission {
+    background-color: #E8DFCE;
+  }
+  .mission .mission-img h2 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 38px;
+    margin: 0 30%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+    left: -78px;
+    margin: 0 11%;
+  }
+  .mission .mission-img img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 40%;
+    position: absolute;
+    left: 25%;
+  }
+  .mission .mission-text {
+    padding-top: 50%;
+    text-align: center;
+    padding-right: 7%;
+  }
+  .mission .mission-text h3 {
+    font-size: 3rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 30px 0;
+    white-space: pre-line;
+    font-family: "Aktiv Bold";
+    line-height: 1.2;
+  }
+  .mission .mission-text p {
+    font-size: 2rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 5% 0;
+    font-family: "Aktiv Medium";
+    line-height: 1.3;
+    white-space: pre-line;
+  }
+  .mission .logo {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+  }
+
+  .contact {
+    background-color: #E8DFCE;
+    display: flex;
+  }
+  .contact .contact-inner {
+    width: 60%;
+  }
+  .contact .contact-inner .contact-top {
+    padding-bottom: 58%;
+  }
+  .contact .contact-inner .contact-top h1 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 38px;
+    margin: 0 30%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+    margin: 0 10%;
+  }
+  .contact .contact-inner .contact-top img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 40%;
+    position: absolute;
+    left: 25%;
+  }
+  .contact .contact-inner .contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .contact .contact-inner .contact-bottom .contact-img {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    height: 117px;
+    position: relative;
+  }
+  .contact .contact-inner .contact-bottom .contact-img img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 100%;
+    position: absolute;
+    top: 95%;
+    left: -11%;
+  }
+  .contact .contact-inner .contact-bottom .logo {
+    padding-top: 61%;
+    width: 45%;
+    width: 170px;
+    padding-left: 30px;
+  }
+  .contact .contact-text {
+    padding-top: 294px;
+    text-align: center;
+    width: 44%;
+  }
+  .contact .contact-text h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: #1A1A1A;
+    padding: 30px;
+    font-family: "Aktiv Medium";
+  }
+  .contact .contact-text p {
+    font-size: 2rem;
+    text-align: center;
+    color: #1A1A1A;
+    padding: 5%;
+    font-family: "Aktiv Medium";
+    line-height: 1.3;
+  }
+  .contact .contact-text button {
+    background-color: #B94700;
+    padding: 20px;
+    border: none;
+  }
+  .contact .contact-text button a {
+    font-size: 2rem;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+
+  .PORTFOLIO {
+    background-color: #B94700;
+  }
+  .PORTFOLIO h1 {
+    background-color: #E8DFCE;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin: 0px 25%;
+    padding: 38px;
+    font-family: "Aktiv Bold";
+    left: 28%;
+    position: absolute;
+    font-size: 1.2rem;
+    color: #B94700;
+    margin: 0 49%;
+  }
+  .PORTFOLIO h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding-top: 20%;
+    color: #E8DFCE;
+    font-family: "Aktiv Bold";
+  }
+  .PORTFOLIO h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Aktiv Medium";
+    padding: 0;
+    color: #E8DFCE;
+    flex-flow: column-reverse;
+  }
+  .PORTFOLIO h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+    padding: 10px 0;
+    flex-flow: column-reverse;
+  }
+  .PORTFOLIO .Tabs {
+    padding: 0 5%;
+    display: flex;
+  }
+  .PORTFOLIO .Tabs .tabs-inner {
+    position: relative;
+    overflow: hidden;
+    width: 35%;
+    padding: 5%;
+    display: flex;
+    margin-bottom: 3rem;
+    display: block;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .tab-scroll {
+    margin: 20px;
+    width: 2px;
+    height: 80%;
+    top: 0;
+    right: 0;
+    background: #B94700;
+    position: absolute;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .tab-scroll .scrollbar {
+    width: 4px;
+    height: 20%;
+    background-color: #B94700;
+    position: absolute;
+    transform: translateX(-1);
+    transition: 700ms;
+    top: 5%;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs {
+    width: 100%;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs label {
+    padding: 20px;
+    display: block;
+    margin: 5px 0 5px 15px;
+    color: #6d7278;
+    font-size: 1.5rem;
+    transition: 700ms;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs label .icon {
+    margin-right: 10px;
+    width: 20px;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs label .icon-2 {
+    margin-left: 10px;
+    width: 10px;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs .active {
+    color: #B94700;
+    font-weight: bold;
+  }
+  .PORTFOLIO .Tabs .tabs-infor {
+    overflow: hidden;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    height: calcu(40%);
+    padding: 0 5%;
+    display: flex;
+    width: 70%;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .list {
+    position: absolute;
+    top: -200%;
+    opacity: 0;
+    margin-top: 5px;
+    transform: scale(0.1);
+    transition: opacity 500ms ease-in-out 0ms;
+    display: flex;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active {
+    top: 0;
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 0;
+    height: auto;
+    position: relative;
+    width: 91%;
+    height: 24vh;
+    padding-top: 83px;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+    width: 100%;
+    padding-top: 20px;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active img {
+    width: 40%;
+    margin: 20px;
+  }
+  .PORTFOLIO .logo {
+    padding: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner .inner h1 {
+    font-size: 120px;
+    line-height: 1.5;
+  }
+  .banner .inner .hero {
+    margin: 25px -90px;
+    width: 30%;
+  }
+  .banner .logo {
+    width: 20%;
+  }
+
+  .about {
+    background-color: #E8DFCE;
+  }
+  .about h2 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 40px;
+    margin: 0 14%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+  }
+  .about .about-inner {
+    padding-top: 10%;
+    display: flex;
+  }
+  .about .about-inner .inner-text {
+    padding: 105px 6%;
+    width: 60%;
+  }
+  .about .about-inner .inner-text h4 {
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 48px;
+    font-family: "Aktiv Bold";
+    padding-left: 20%;
+    white-space: pre-line;
+  }
+  .about .about-inner .inner-text p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 20%;
+    font-family: "Aktiv Medium";
+    white-space: pre-line;
+    line-height: 1.3;
+  }
+  .about .about-inner .inner-img {
+    padding: 40px 0;
+    width: 40%;
+  }
+  .about .logo {
+    padding: 50px;
+  }
+
+  .values {
+    background-color: #B94700;
+    text-align: center;
+    display: flex;
+  }
+  .values h1 {
+    background-color: #E8DFCE;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin: 0px 25%;
+    padding: 38px;
+    font-family: "Aktiv Bold";
+    left: 28%;
+    position: absolute;
+    font-size: 1.2rem;
+    color: #B94700;
+    margin: 0 50%;
+  }
+  .values .main-value {
+    padding-top: 22%;
+    margin-left: 132px;
+  }
+  .values .main-value h3 {
+    font-size: 4rem;
+    color: #E8DFCE;
+    font-family: "Aktiv Bold";
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 160px;
+    margin-bottom: 30px;
+  }
+  .values .main-value img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 60%;
+  }
+  .values .value-text {
+    padding-top: 177px;
+    padding-right: 2%;
+  }
+  .values .value-text .value-inner {
+    margin-bottom: 10px;
+  }
+  .values .value-text .value-inner h4 {
+    font-size: 3rem;
+    padding: 20px;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+  .values .value-text .value-inner p {
+    font-size: 2rem;
+    white-space: pre-line;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+  .values .logo {
+    padding: 36px;
+    position: absolute;
+    right: -2%;
+    bottom: -217%;
+  }
+
+  .mission {
+    background-color: #E8DFCE;
+  }
+  .mission .mission-img h2 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 38px;
+    margin: 0 30%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+    left: -78px;
+    margin: 0 11%;
+  }
+  .mission .mission-img img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 32%;
+    position: absolute;
+    left: 21%;
+  }
+  .mission .mission-text {
+    padding-top: 33%;
+    text-align: center;
+    padding-right: 7%;
+  }
+  .mission .mission-text h3 {
+    font-size: 5rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 30px 0;
+    white-space: pre-line;
+    font-family: "Aktiv Bold";
+    line-height: 1.2;
+  }
+  .mission .mission-text p {
+    font-size: 2rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 5% 0;
+    font-family: "Aktiv Medium";
+    line-height: 1.3;
+    white-space: pre-line;
+  }
+  .mission .logo {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+  }
+
+  .PORTFOLIO {
+    background-color: #B94700;
+  }
+  .PORTFOLIO h1 {
+    background-color: #E8DFCE;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin: 0px 25%;
+    padding: 38px;
+    font-family: "Aktiv Bold";
+    left: 28%;
+    position: absolute;
+    font-size: 1.2rem;
+    color: #B94700;
+    margin: 0 49%;
+  }
+  .PORTFOLIO h3 {
+    display: flex;
+    font-size: 5rem;
+    padding-top: 20%;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+    flex-direction: column-reverse;
+    padding-left: 12%;
+  }
+  .PORTFOLIO h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Aktiv Medium";
+    padding: 0;
+    color: #E8DFCE;
+    flex-flow: column-reverse;
+  }
+  .PORTFOLIO h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #B7B09C;
+    font-family: "Aktiv Medium";
+    padding: 10px 0;
+    flex-flow: column-reverse;
+  }
+  .PORTFOLIO .Tabs {
+    padding: 0 5%;
+    display: flex;
+  }
+  .PORTFOLIO .Tabs .tabs-inner {
+    position: relative;
+    overflow: hidden;
+    width: 35%;
+    padding: 5%;
+    display: flex;
+    margin-bottom: 3rem;
+    display: block;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .tab-scroll {
+    margin: 20px;
+    width: 2px;
+    height: 80%;
+    top: 0;
+    right: 0;
+    background: #B94700;
+    position: absolute;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .tab-scroll .scrollbar {
+    width: 4px;
+    height: 20%;
+    background-color: #B94700;
+    position: absolute;
+    transform: translateX(-1);
+    transition: 700ms;
+    top: 5%;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs {
+    width: 100%;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs label {
+    padding: 20px;
+    display: block;
+    margin: 5px 0 5px 15px;
+    color: #6d7278;
+    font-size: 1.5rem;
+    transition: 700ms;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs .active {
+    color: #E8DFCE;
+    font-weight: bold;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs .active h2 {
+    color: #E8DFCE;
+  }
+  .PORTFOLIO .Tabs .tabs-infor {
+    overflow: hidden;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    height: calcu(40%);
+    padding: 0 5%;
+    display: flex;
+    width: 70%;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .list {
+    position: absolute;
+    top: -200%;
+    opacity: 0;
+    margin-top: 5px;
+    transform: scale(0.1);
+    transition: opacity 500ms ease-in-out 0ms;
+    display: flex;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active {
+    top: 0;
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 0;
+    height: auto;
+    position: relative;
+    width: 91%;
+    height: 48vh;
+    padding-top: 123px;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+    width: 100%;
+    padding-top: 20px;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active h2 {
+    color: #E8DFCE;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active img {
+    width: 40%;
+    margin: 20px;
+  }
+  .PORTFOLIO .logo {
+    padding: 30px;
+  }
+
+  .contact {
+    background-color: #E8DFCE;
+    display: flex;
+  }
+  .contact .contact-inner {
+    width: 60%;
+  }
+  .contact .contact-inner .contact-top {
+    padding-bottom: 58%;
+  }
+  .contact .contact-inner .contact-top h1 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 38px;
+    margin: 0 30%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+    margin: 0 10%;
+  }
+  .contact .contact-inner .contact-top img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 32%;
+    position: absolute;
+    left: 25%;
+  }
+  .contact .contact-inner .contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .contact .contact-inner .contact-bottom .contact-img {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 52%;
+    height: 117px;
+    position: relative;
+  }
+  .contact .contact-inner .contact-bottom .contact-img img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 100%;
+    position: absolute;
+    top: 95%;
+    left: -11%;
+  }
+  .contact .contact-inner .contact-bottom .logo {
+    padding-top: 61%;
+    width: 45%;
+    width: 170px;
+    padding-left: 30px;
+  }
+  .contact .contact-text {
+    padding-top: 294px;
+    text-align: right;
+    width: 44%;
+  }
+  .contact .contact-text h3 {
+    font-size: 4.5rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 30px;
+    font-family: "Aktiv Medium";
+  }
+  .contact .contact-text p {
+    font-size: 2rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 0 5%;
+    font-family: "Aktiv Medium";
+    line-height: 1.3;
+    white-space: pre-line;
+  }
+  .contact .contact-text button {
+    background-color: #B94700;
+    padding: 20px;
+    border: none;
+    margin: 30px 30px;
+  }
+  .contact .contact-text button a {
+    font-size: 2rem;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+}
+@media (min-width: 1400px) {
+  .banner .inner .hero {
+    width: 35%;
+    margin: 25px -88px;
+  }
+  .banner span {
+    top: 65%;
+  }
+  .banner .logo {
+    width: 15%;
+  }
+
+  .about {
+    background-color: #E8DFCE;
+  }
+  .about h2 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 40px;
+    margin: 0 14%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+  }
+  .about .about-inner {
+    padding-top: 10%;
+    display: flex;
+  }
+  .about .about-inner .inner-text {
+    padding: 105px 6%;
+    width: 60%;
+  }
+  .about .about-inner .inner-text h4 {
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 48px;
+    font-family: "Aktiv Bold";
+    padding-left: 20%;
+    white-space: pre-line;
+  }
+  .about .about-inner .inner-text p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 20%;
+    font-family: "Aktiv Medium";
+    white-space: pre-line;
+    line-height: 1.3;
+  }
+  .about .about-inner .inner-img {
+    padding: 40px 0;
+    width: 40%;
+  }
+  .about .logo {
+    padding: 50px;
+  }
+
+  .values {
+    background-color: #B94700;
+    text-align: center;
+    display: flex;
+  }
+  .values h1 {
+    background-color: #E8DFCE;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin: 0px 25%;
+    padding: 38px;
+    font-family: "Aktiv Bold";
+    left: 28%;
+    position: absolute;
+    font-size: 1.2rem;
+    color: #B94700;
+    margin: 0 50%;
+  }
+  .values .main-value {
+    padding-top: 22%;
+    margin-left: 168px;
+  }
+  .values .main-value h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: #E8DFCE;
+    padding: 30px;
+    font-family: "Aktiv Bold";
+    white-space: pre-line;
+    margin-bottom: 30px;
+  }
+  .values .main-value img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 60%;
+  }
+  .values .value-text {
+    padding-top: 177px;
+    padding-right: 2%;
+  }
+  .values .value-text .value-inner h4 {
+    font-size: 3rem;
+    padding: 15px;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+  .values .value-text .value-inner p {
+    font-size: 2rem;
+    white-space: pre-line;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+  .values .logo {
+    padding: 36px;
+    position: absolute;
+    right: -2%;
+    bottom: -217%;
+  }
+
+  .mission {
+    background-color: #E8DFCE;
+  }
+  .mission .mission-img h2 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 38px;
+    margin: 0 30%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+    left: -78px;
+    margin: 0 11%;
+  }
+  .mission .mission-img img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 28%;
+    position: absolute;
+    left: 21%;
+  }
+  .mission .mission-text {
+    padding-top: 33%;
+    text-align: center;
+    padding-right: 7%;
+  }
+  .mission .mission-text h3 {
+    font-size: 5rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 30px 0;
+    white-space: pre-line;
+    font-family: "Aktiv Bold";
+    line-height: 1.2;
+  }
+  .mission .mission-text p {
+    font-size: 2rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 5% 0;
+    font-family: "Aktiv Medium";
+    line-height: 1.3;
+    white-space: pre-line;
+  }
+  .mission .logo {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+  }
+
+  .PORTFOLIO {
+    background-color: #B94700;
+  }
+  .PORTFOLIO h1 {
+    background-color: #E8DFCE;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin: 0px 25%;
+    padding: 38px;
+    font-family: "Aktiv Bold";
+    left: 28%;
+    position: absolute;
+    font-size: 1.2rem;
+    color: #B94700;
+    margin: 0 49%;
+  }
+  .PORTFOLIO h3 {
+    display: flex;
+    font-size: 5rem;
+    padding-top: 20%;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+    flex-direction: column-reverse;
+    padding-left: 12%;
+  }
+  .PORTFOLIO h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Aktiv Medium";
+    padding: 0;
+    color: #E8DFCE;
+    flex-flow: column-reverse;
+  }
+  .PORTFOLIO h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #B7B09C;
+    font-family: "Aktiv Medium";
+    padding: 10px 0;
+    flex-flow: column-reverse;
+  }
+  .PORTFOLIO .Tabs {
+    padding: 0 5%;
+    display: flex;
+  }
+  .PORTFOLIO .Tabs .tabs-inner {
+    position: relative;
+    overflow: hidden;
+    width: 35%;
+    padding: 5%;
+    display: flex;
+    margin-bottom: 3rem;
+    display: block;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .tab-scroll {
+    margin: 20px;
+    width: 2px;
+    height: 80%;
+    top: 0;
+    right: 0;
+    background: #B94700;
+    position: absolute;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .tab-scroll .scrollbar {
+    width: 4px;
+    height: 20%;
+    background-color: #B94700;
+    position: absolute;
+    transform: translateX(-1);
+    transition: 700ms;
+    top: 5%;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs {
+    width: 100%;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs label {
+    padding: 20px;
+    display: block;
+    margin: 5px 0 5px 15px;
+    color: #6d7278;
+    font-size: 1.5rem;
+    transition: 700ms;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs label .icon {
+    margin-right: 10px;
+    width: 20px;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs label .icon-2 {
+    margin-left: 10px;
+    width: 10px;
+  }
+  .PORTFOLIO .Tabs .tabs-inner .side-tabs .active {
+    color: #B94700;
+    font-weight: bold;
+  }
+  .PORTFOLIO .Tabs .tabs-infor {
+    overflow: hidden;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    height: calcu(40%);
+    padding: 0 5%;
+    display: flex;
+    width: 70%;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .list {
+    position: absolute;
+    top: -200%;
+    opacity: 0;
+    margin-top: 5px;
+    transform: scale(0.1);
+    transition: opacity 500ms ease-in-out 0ms;
+    display: flex;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active {
+    top: 0;
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 0;
+    height: auto;
+    position: relative;
+    width: 91%;
+    height: 48vh;
+    padding-top: 83px;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+    width: 100%;
+    padding-top: 20px;
+  }
+  .PORTFOLIO .Tabs .tabs-infor .active img {
+    width: 40%;
+    margin: 20px;
+  }
+  .PORTFOLIO .logo {
+    padding: 30px;
+  }
+
+  .contact {
+    background-color: #E8DFCE;
+    display: flex;
+  }
+  .contact .contact-inner {
+    width: 60%;
+  }
+  .contact .contact-inner .contact-top {
+    padding-bottom: 58%;
+  }
+  .contact .contact-inner .contact-top h1 {
+    background-color: #B94700;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding: 38px;
+    margin: 0 30%;
+    position: absolute;
+    left: -68px;
+    color: #E8DFCE;
+    font-size: 1.2rem;
+    font-family: "Aktiv Bold";
+    margin: 0 10%;
+  }
+  .contact .contact-inner .contact-top img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 32%;
+    position: absolute;
+    left: 25%;
+  }
+  .contact .contact-inner .contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .contact .contact-inner .contact-bottom .contact-img {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 52%;
+    height: 117px;
+    position: relative;
+  }
+  .contact .contact-inner .contact-bottom .contact-img img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: -11%;
+  }
+  .contact .contact-inner .contact-bottom .logo {
+    padding-top: 61%;
+    width: 45%;
+    width: 170px;
+    padding-left: 30px;
+  }
+  .contact .contact-text {
+    padding-top: 294px;
+    text-align: right;
+    width: 44%;
+  }
+  .contact .contact-text h3 {
+    font-size: 4.5rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 30px;
+    font-family: "Aktiv Medium";
+  }
+  .contact .contact-text p {
+    font-size: 2rem;
+    text-align: right;
+    color: #1A1A1A;
+    padding: 0 5%;
+    font-family: "Aktiv Medium";
+    line-height: 1.3;
+    white-space: pre-line;
+  }
+  .contact .contact-text button {
+    background-color: #B94700;
+    padding: 20px;
+    border: none;
+    margin: 30px 30px;
+  }
+  .contact .contact-text button a {
+    font-size: 2rem;
+    color: #E8DFCE;
+    font-family: "Aktiv Medium";
+  }
+}/*# sourceMappingURL=style.css.map */
